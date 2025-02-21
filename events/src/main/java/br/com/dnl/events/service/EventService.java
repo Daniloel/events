@@ -16,7 +16,7 @@ public class EventService {
 
     public Event addNewEvent(Event event){
       //Gerar pretty Name
-      event.setPrettyName(event.getTitle().toLowerCase().replaceAll("","-"));
+      event.setPrettyName(event.getTitle().toLowerCase().replaceAll(" ","-"));
       return eventPepository.save(event);
     }
 

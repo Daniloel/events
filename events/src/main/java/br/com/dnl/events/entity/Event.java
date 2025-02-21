@@ -25,7 +25,7 @@ public class Event {
     private String location;
 
     @Column(name = "price",nullable = false)
-    private double price;
+    private Double price;
 
     @Column(name = "start_date")
     private LocalDate startDate;
